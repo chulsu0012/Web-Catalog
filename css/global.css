@@ -1,0 +1,71 @@
+/* 글꼴 설정 */
+#menu > ul > li > a {
+  font: bold 16px "malgun gothic";
+  color: orange;
+}
+
+#menu > ul > li > ul > li > a {
+  font: 14px "malgun gothic";
+}
+
+
+#header {
+  border-bottom: 1px solid orange;
+  background: #ffffff;
+}
+
+#header > div{
+  height: 100px;
+  min-width: 900px;
+  margin: 0 150px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#logo {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo img {
+  height: 30px;
+}
+
+#menu > ul > li {
+  float: left;
+  width: 120px;
+  position: relative;
+}
+
+#menu > ul > li > ul {
+  width: 110px;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid orange;
+}
+
+#menu > ul > li > ul  > li {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu > ul > li:hover > ul {
+  display: block;
+}
+
+#menu > ul > li > ul > li:hover {
+  background: orange;
+}
+
+#menu > ul > li > ul > li:hover > a {
+  color: white;
+  font-weight: bold;
+}
