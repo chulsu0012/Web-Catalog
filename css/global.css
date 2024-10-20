@@ -1,6 +1,6 @@
 /* 글꼴 설정 */
 #menu > ul > li > a {
-  font: bold 16px "malgun gothic";
+  font: bold 20px "malgun gothic";
   color: orange;
 }
 
@@ -8,21 +8,20 @@
   font: 14px "malgun gothic";
 }
 
-
-#header {
-  border-bottom: 1px solid orange;
-  background: #ffffff;
-}
-
-#header > div{
+header {
+  width: 100%;
   height: 100px;
   min-width: 900px;
-  margin: 0 150px;
+  padding: 0 150px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
+
+  border-bottom: 1px solid orange;
+  background: #ffffff;
 }
 
 #logo {
@@ -39,11 +38,14 @@
 #menu > ul > li {
   float: left;
   width: 120px;
+  padding: 30px 0;
   position: relative;
 }
 
+/* Sub menu */
 #menu > ul > li > ul {
   width: 110px;
+  margin-top: 30px;
   display: none;
   position: absolute;
   background: #ffffff;
