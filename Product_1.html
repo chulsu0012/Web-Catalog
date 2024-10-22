@@ -8,18 +8,68 @@
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/font.css">
   <style>
-    td, th {
-      vertical-align: top;
-      text-align: left;
-      padding: 3px 0;
+    .content {
+      width: 100%;
     }
-    td:first-child, th:first-child {
-      width: 150px;
-      height: 40px;
+    #banner {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      margin: 20px 0;
     }
-    span {
+    .list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 80px;
+    }
+    .circle {
+      width: 7px;
+      height: 7px;
+      background-color: #97282B;
+      border-radius: 50%;
+    }
+    .number {
+      width: 90px;
+      height: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
       font-weight: 800;
-      color: #97282B;
+      color: #fff;
+      background-color: #97282B;
+      margin: 10px 0px;
+    }
+    .text {
+      font-size: 14px;
+      text-align: center;
+      color: #A0A0A0;
+    }
+    .sample {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin: 10px auto;
+    }
+    .sample img {
+      width: 150px;
+      height: 110px;
+      margin: 0 5px;
+      transition: ease 0.3s;
+    }
+    .sample img:hover {
+      transform: scale(1.1);
+      z-index: 10;
     }
   </style>
 </head>
@@ -69,6 +119,44 @@
     <div class="twrap">
       <p class="title">HIGH-SENSITIVE POLYESTER</p>
       <p class="subtitle">Product</p>
+    </div>
+    <div class="content">
+      <div>
+        <p>While preserving the touch and feel of
+          <br/>natural fibers Reflecting season trends This is a highly sensitive line.</p>
+      </div>
+      <img id="banner" src="img/Product_1_1.png"/>
+      <div class="list">
+        <div class="step">
+          <div class="circle"></div>
+          <div class="number">01</div>
+          <div class="text">Silk-Like</div>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <div class="number">02</div>
+          <div class="text">Linen-like</div>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <div class="number">03</div>
+          <div class="text">Cotton/Wool like</div>
+        </div>
+      </div>
+      <div class="sample">
+        <img src="img/Product_1_2.svg"/>
+        <img src="img/Product_1_3.svg"/>
+        <img src="img/Product_1_4.svg"/>
+        <img src="img/Product_1_5.svg"/>
+        <img src="img/Product_1_6.svg"/>
+      </div>
+      <div class="sample">
+        <img src="img/Product_1_7.svg"/>
+        <img src="img/Product_1_8.svg"/>
+        <img src="img/Product_1_9.svg"/>
+        <img src="img/Product_1_10.svg"/>
+        <img src="img/Product_1_11.svg"/>
+      </div>
     </div>
   </div>
   <footer>

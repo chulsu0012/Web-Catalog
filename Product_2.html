@@ -8,18 +8,69 @@
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/font.css">
   <style>
-    td, th {
-      vertical-align: top;
-      text-align: left;
-      padding: 3px 0;
+    .content {
+      width: 100%;
     }
-    td:first-child, th:first-child {
-      width: 150px;
-      height: 40px;
+    #banner {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      margin: 20px 0;
     }
-    span {
+    .list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5px 30px 10px;
+    }
+    .circle {
+      width: 7px;
+      height: 7px;
+      background-color: #97282B;
+      border-radius: 50%;
+    }
+    .number {
+      width: 90px;
+      height: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
       font-weight: 800;
-      color: #97282B;
+      color: #fff;
+      background-color: #97282B;
+      margin: 10px 0px;
+    }
+    .text {
+      font-size: 14px;
+      text-align: center;
+      color: #A0A0A0;
+    }
+    .sample {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .sample img {
+      width: 190px;
+      height: 150px;
+      border-radius: 0;
+      /* margin: 0 10px; */
+      transition: ease 0.3s;
+    }
+    .sample img:hover {
+      transform: scale(1.1);
+      z-index: 10;
     }
   </style>
 </head>
@@ -69,6 +120,41 @@
     <div class="twrap">
       <p class="title">HIGH-FUNCTIONAL POLYESTER</p>
       <p class="subtitle">Product</p>
+    </div>
+    <div class="content">
+      <div>
+        <p>Responding to changing environments, the wearer’s Maximized convenience
+          <br/>This is a functional line.</p>
+      </div>
+      <img id="banner" src="img/Product_2_1.png"/>
+      <div class="list">
+        <div class="step">
+          <div class="circle"></div>
+          <div class="number">01</div>
+          <div class="text"> Cool biz & Warm biz<br/>Textiles</div>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <div class="number">02</div>
+          <div class="text"> Breathable<br/>waterproof fiber</div>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <div class="number">03</div>
+          <div class="text">insect repellent fiber</div>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <div class="number">04</div>
+          <div class="text">antifouling fiber</div>
+        </div>
+      </div>
+      <div class="sample">
+        <img src="img/Product_2_2.png"/>
+        <img src="img/Product_2_3.png"/>
+        <img src="img/Product_2_4.png"/>
+        <img src="img/Product_2_5.png"/>
+      </div>
     </div>
   </div>
   <footer>
