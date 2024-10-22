@@ -1,2 +1,2 @@
-# Seyeon_Hompage
-홈페이지 외주 개발
+# Web Catalog
+HTML, CCS를 사용한 전자 카탈로그 외주 개발
