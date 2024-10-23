@@ -8,45 +8,22 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/font.css">
   <style>
-    .content {
-      width: 100%;
-      background-color: #efefef;
-      color: #000;
+    .line {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .img-box {
+      margin-top: 30px;
+    }
+    .wrap img {
+      width: 170px;
+      margin: 10px;
       border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: justify;
-      margin-bottom: 10px;
+      transition: ease 0.3s;
     }
-    .content p {
-      padding: 30px;
-      font-size: 14px;
-      line-height: 1.2;
-    }
-    table {
-      width: 100%;
-      margin: 10px 30px 10px 30px;
-      text-align: center;
-      align-items: center;
-      border-bottom: 2px solid #97282B;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-    th {
-      width: 30px;
-      height: 30px;
-      border-bottom: 2px solid;
-      padding: 20px 0;
-      color: #97282B;
-    }
-    td {
-      height: 80px;
-      padding: 15px 30px;
-      font-size: 14px;
-    }
-    td:not(:first-child){
-      border-left: 1px solid #afafaf;
+    .wrap img:hover {
+      transform: scale(1.1);
+      z-index: 10;
     }
   </style>
 </head>
@@ -94,42 +71,30 @@
   </header>
   <div class="wrap">
     <div class="twrap">
-      <p class="title">MKT ACTIVITIES</p>
-      <p class="subtitle">Performance</p>
+      <p class="title">FACILITIES</p>
+      <p class="subtitle">Company</p>
     </div>
-    <table>
-      <tr>
-        <th>2013</th>
-        <th>2014</th>
-        <th>2015</th>
-        <th>2016</th>
-      </tr>
-      <tr>
-        <td>TEXWORLD USA</td>
-        <td>TEXWORLD PARIS</td>
-        <td>TEXWORLD PARIS</td>
-        <td>INTERTEXTILE SHANGHAI</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>INTERTEXTILE SHANGHAI</td>
-        <td>INTERTEXTILE SHANGHAI</td>
-        <td>TEXWORLD PARIS</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td>TEXWORLD PARIS</td>
-        <td></td>
-      </tr>
-    </table>
-    <div class="content">
-      <p>TEXWORLD USA, TEXWORLD PARIS, INTERTEXTILE SHANGHAI</p>
+    <p class="line">
+      It is a company specializing in the production of polyester fabrics, equipped with various facilities such as Pin winder, Two for one Twister, and Water-jet loom required for yarn processing and weaving.
+    </p>
+    <div class="img-box">
+      <div>
+        <img src="img/Company_8_1.png"/>
+        <img src="img/Company_8_2.png"/>
+        <img src="img/Company_8_3.png"/>
+        <img src="img/Company_8_4.png"/>
+      </div>
+      <div>
+        <img src="img/Company_8_5.png"/>
+        <img src="img/Company_8_6.png"/>
+        <img src="img/Company_8_7.png"/>
+        <img src="img/Company_8_8.png"/>
+      </div>
+      <div>
+        <img src="img/Company_8_9.png"/>
+        <img src="img/Company_8_10.png"/>
+      </div>
     </div>
-    <ul class="pagination">
-      <li class="active"><a>1</a></li>
-      <li><a href="Performance_6.html">2</a></li>
-    </ul>
   </div>
   <footer>
     <p>© 2024 HOSHIN Textile CO.,Ltd. All rights reserved.</p>

@@ -8,39 +8,83 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/font.css">
   <style>
-    table {
-      width: 80%;
-      height: 300px;
-      margin: 10px 30px 10px 30px;
-      text-align: center;
-      border-top: 2px solid #97282B;
-      border-bottom: 2px solid #97282B;
-      border-collapse: collapse;
+    .wrap {
+      width: 1100px;
     }
-    th {
-      border-bottom: 2px solid;
-      padding: 20px;
+    .hwrap {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      /* gap: 30px; */
+    }
+    .timeline {
+      width: 100%;
+      border-left: 2px solid #97282B;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    #left {
+      border-bottom: 2px solid #97282B;
+    }
+    #right {
+      border-top: 2px solid #97282B;
+      border-right: 2px solid #97282B;
+    }
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+    }
+    #left > .timeline-item {
+      margin-bottom: 18px;
+    }
+    #right > .timeline-item {
+      margin-top: 18px;
+    }
+    .circle {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border: 1.5px solid #97282B;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -10px;
+      top: 0;
+    }
+    .circle::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #97282B;
+      border-radius: 50%;
+    }
+    .content {
+      width: 400px;
+      margin-left: 40px;
+    }
+    .date {
+      font-size: 14px;
+      font-weight: bold;
       color: #97282B;
     }
-    td {
-      border-bottom: 1px solid #000;
-      padding: 20px;
-      font-size: 14px;
+    .content p:not(.date) {
+      font-size: 12px;
     }
-    td:first-child, th:first-child {
-      width: 120px;
-      text-align: center;
+    .timeline-row {
+      width: 100%;
     }
-    .annotation {
-      width: 80%;
-      text-align: right;
-      font-size: 10px;
-      color: #afafaf;
+    .line {
+      width: 51.55%;
+      height: 2px;
+      background-color: #97282B;
     }
-    .wrap img {
-      width: 80%;
-      height: 200px;
-      border-radius: 10px;
+
+    #right {
+      float: right;
+      top: 0;
     }
   </style>
 </head>
@@ -59,13 +103,13 @@
         <li><a href="Company_0.html">COMPANY</a>
           <ul>
             <li><a href="Company_1.html">Introduction</a></li>
-            <li><a href="Company_2.html">Information</a></li>
-            <li><a href="Company_3.html">Vision</a></li>
-            <li><a href="Company_4.html">History</a></li>
-            <li><a href="Company_5.html">Sales</a></li>
-            <li><a href="Company_6.html">Human Resources</a></li>
-            <li><a href="Company_7.html">Certificate</a></li>
-            <li><a href="Company_8.html">Facilities</a></li>
+            <li><a href="Company_3.html">Information</a></li>
+            <li><a href="Company_4.html">Vision</a></li>
+            <li><a href="Company_5.html">History</a></li>
+            <li><a href="Company_6.html">Sales</a></li>
+            <li><a href="Company_7.html">Human Resources</a></li>
+            <li><a href="Company_8.html">Certificate</a></li>
+            <li><a href="Company_9.html">Facilities</a></li>
           </ul>
         </li>
         <li><a href="Product_0.html">PRODUCT</a>
@@ -88,53 +132,156 @@
   </header>
   <div class="wrap">
     <div class="twrap">
-      <p class="title">SALES COMPOSITION : 2017 ~ 2021</p>
+      <p class="title">HISTORY : 1990 ~ 2020</p>
       <p class="subtitle">Company</p>
     </div>
-    <img src="img/company_5_1.png">
-    <table>
-      <tr>
-        <th>YEARS</th>
-        <th>2017</th>
-        <th>2018</th>
-        <th>2019</th>
-        <th>2020</th>
-        <th>2021</th>
-      </tr>
-      <tr>
-        <td>TAKE(A)</td>
-        <td>8,396</td>
-        <td>10,337</td>
-        <td>11,799</td>
-        <td>6,835</td>
-        <td>4,603</td>
-      </tr>
-      <tr>
-        <td>Domestic consumption</td>
-        <td>1,412</td>
-        <td>459</td>
-        <td>1,870</td>
-        <td>2,789</td>
-        <td>1,402</td>
-      </tr>
-      <tr>
-        <td>Export(B)</td>
-        <td>6,975</td>
-        <td>9,878</td>
-        <td>9,929</td>
-        <td>4,047</td>
-        <td>3,202</td>
-      </tr>
-      <tr>
-        <td>Export proportion<br/>(B/A)X100%</td>
-        <td>83%</td>
-        <td>96%</td>
-        <td>84%</td>
-        <td>59%</td>
-        <td>70%</td>
-      </tr>
-    </table>
-    <p class="annotation">In millions of Korean won</p>
+    <div class="hwrap">
+      <div class="timeline" id="left">
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">1990.03</p>
+            <p>Establishment of Hoshin Textile Co., Ltd. (Textile products) Establishment of Younghoshin Textile Co., Ltd. 
+              <br/>(Textile product sales)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">1990.03</p>
+            <p>Converted to Hoshin Textile Co., Ltd. as a corporation (17811-0008303)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">1994.03</p>
+            <p>Completion of the first Gyeongsan factory and commencement of yarn and weaving manufacturing</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">1996.08</p>
+            <p>Report export trade business and start export trade business</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2000.08</p>
+            <p>Acquired Gyeongsan 2nd factory and started processing manufacturing</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2012.09</p>
+            <p>MAIN-BIZ (Management Innovative Small and Medium Business) certification</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2012.11</p>
+            <p>ISO-9001 certification</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2012.11</p>
+            <p>Establishment of a research department</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2013.01</p>
+            <p>Certification as a specialized company for parts and materials</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2013.03</p>
+            <p>INNO-BIZ (Technologically Innovative Small and Medium Business)</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline" id="right">
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2020.12</p>
+            <p>Designated as a promising company entering the overseas procurement market (G-PASS company)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2019.12</p>
+            <p>Received the Export Tower Award on the 56th Trade Day (Export USD 7 million)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2019.11</p>
+            <p>Received Presidential Citation on the 33rd Textile Day</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2018.12</p>
+            <p>Designated as Gyeongbuk PRIDE product</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2018.04</p>
+            <p> Venture business certification</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2018.04</p>
+            <p>Selected as a global small but strong company</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2017.12</p>
+            <p>Received the Export Tower Award on the 54th Trade Day (Export USD 5 million)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2017.09</p>
+            <p>Sponsor of K-Fashion Project in Paris</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2015.06</p>
+            <p>Designated as a promising export small and medium business</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2015.05</p>
+            <p>Establishment of a corporate research center</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <footer>
     <p>© 2024 HOSHIN Textile CO.,Ltd. All rights reserved.</p>
