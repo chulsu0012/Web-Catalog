@@ -10,66 +10,70 @@
   <style>
     .content {
       width: 100%;
-    }
-    #banner {
-      width: 100%;
-      height: 180px;
+      background-color: #efefef;
+      color: #000;
       border-radius: 10px;
-      margin: 20px 0;
-    }
-    .list {
-      width: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .step {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 10px 80px;
-    }
-    .circle {
-      width: 7px;
-      height: 7px;
-      background-color: #97282B;
-      border-radius: 50%;
-    }
-    .number {
-      width: 90px;
-      height: 35px;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 18px;
-      font-weight: 800;
-      color: #fff;
-      background-color: #97282B;
-      margin: 10px 0px;
+      text-align: justify;
+      margin-bottom: 10px;
     }
-    .text {
+    .content p {
+      padding: 30px;
       font-size: 14px;
-      text-align: center;
-      color: #A0A0A0;
+      line-height: 1.2;
     }
-    .sample {
-      width: 100%;
+    .pagination {
       display: flex;
-      flex-direction: row;
+      justify-content: center;
+      list-style-type: none;
+      position: fixed;
+      bottom: 150px;
+    }
+    .pagination li {
+      margin: 0 3px;
+    }
+    .pagination a {
+      text-decoration: none;
+      background-color: #fff;;
+      color: #97282B;
+      padding: 5px 10px;
+      border: 1px solid #97282B;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .pagination a:hover {
+      background-color: #97282B;
+      color: white;
+    }
+    .pagination .active a {
+      background-color: #97282B;
+      color: white;
+    }
+    table {
+      width: 100%;
+      margin: 10px 30px 10px 30px;
+      text-align: center;
       align-items: center;
-      justify-content: space-around;
-      margin: 10px auto;
+      border-bottom: 2px solid #97282B;
+      border-collapse: collapse;
+      margin-bottom: 20px;
     }
-    .sample img {
-      width: 150px;
-      height: 110px;
-      margin: 0 5px;
-      transition: ease 0.3s;
+    th {
+      width: 30px;
+      height: 30px;
+      border-bottom: 2px solid;
+      padding: 15px 0;
+      color: #97282B;
     }
-    .sample img:hover {
-      transform: scale(1.1);
-      z-index: 10;
+    td {
+      height: 80px;
+      padding: 0 30px;
+      font-size: 14px;
+    }
+    td:not(:first-child){
+      border-left: 1px solid #afafaf;
     }
   </style>
 </head>
@@ -117,47 +121,49 @@
   </header>
   <div class="wrap">
     <div class="twrap">
-      <p class="title">HIGH-SENSITIVE POLYESTER</p>
-      <p class="subtitle">Product</p>
+      <p class="title">MKT ACTIVITIES</p>
+      <p class="subtitle">Performance</p>
     </div>
+    <table>
+      <tr>
+        <th>2017</th>
+        <th>2018</th>
+        <th>2019</th>
+        <th>2020</th>
+      </tr>
+      <tr>
+        <td>KPNY NEWYORK</td>
+        <td>INTERTEXTILE SHANGHAI</td>
+        <td>TEXWORLD PARIS</td>
+        <td>INTERTEXTILE SHANGHAI</td>
+      </tr>
+      <tr>
+        <td>FABRIC START MUNICH</td>
+        <td>TEXWORLD PARIS</td>
+        <td>INTERTEXTILE SHANGHAI</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>INTERTEXTILE SHANGHAI</td>
+        <td>INTERTEXTILE LONDON</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>TEXWORLD PARIS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
     <div class="content">
-      <div>
-        <p>While preserving the touch and feel of
-          <br/>natural fibers Reflecting season trends This is a highly sensitive line.</p>
-      </div>
-      <img id="banner" src="img/Product_1_1.png"/>
-      <div class="list">
-        <div class="step">
-          <div class="circle"></div>
-          <div class="number">01</div>
-          <div class="text">Silk-Like</div>
-        </div>
-        <div class="step">
-          <div class="circle"></div>
-          <div class="number">02</div>
-          <div class="text">Linen-like</div>
-        </div>
-        <div class="step">
-          <div class="circle"></div>
-          <div class="number">03</div>
-          <div class="text">Cotton/Wool like</div>
-        </div>
-      </div>
-      <div class="sample">
-        <img src="img/Product_1_2.svg"/>
-        <img src="img/Product_1_3.svg"/>
-        <img src="img/Product_1_4.svg"/>
-        <img src="img/Product_1_5.svg"/>
-        <img src="img/Product_1_6.svg"/>
-      </div>
-      <div class="sample">
-        <img src="img/Product_1_7.svg"/>
-        <img src="img/Product_1_8.svg"/>
-        <img src="img/Product_1_9.svg"/>
-        <img src="img/Product_1_10.svg"/>
-        <img src="img/Product_1_11.svg"/>
-      </div>
+      <p> KPNY NEWYORK, FABRIC START MUNICH, TEXWORLD PARIS,
+        <br/>INTERTEXTILE SHANGHAI, INTERTEXTILE LONDON</p>
     </div>
+    <ul class="pagination">
+      <li><a href="Performance_5.html">1</a></li>
+      <li class="active"><a>2</a></li>
+    </ul>
   </div>
   <footer>
     <p>© 2024 HOSHIN Textile CO.,Ltd. All rights reserved.</p>

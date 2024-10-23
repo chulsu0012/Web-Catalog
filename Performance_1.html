@@ -8,18 +8,39 @@
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/font.css">
   <style>
-    td, th {
-      vertical-align: top;
-      text-align: left;
-      padding: 3px 0;
+    .line {
+      font-size: 14px;
+      line-height: 1.8;
     }
-    td:first-child, th:first-child {
-      width: 150px;
-      height: 40px;
+    .wrap img {
+      width: 100%;
     }
-    span {
-      font-weight: 800;
+    .pagination {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      position: fixed;
+      bottom: 150px;
+    }
+    .pagination li {
+      margin: 0 3px;
+    }
+    .pagination a {
+      text-decoration: none;
+      background-color: #fff;;
       color: #97282B;
+      padding: 5px 10px;
+      border: 1px solid #97282B;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .pagination a:hover {
+      background-color: #97282B;
+      color: white;
+    }
+    .pagination .active a {
+      background-color: #97282B;
+      color: white;
     }
   </style>
 </head>
@@ -67,52 +88,18 @@
   </header>
   <div class="wrap">
     <div class="twrap">
-      <p class="title">INFORMATION</p>
-      <p class="subtitle">Company</p>
+      <p class="title">MAJOR CUSTOMER</p>
+      <p class="subtitle">Performance</p>
     </div>
-    <table>
-      <tr>
-        <td><span>NAME</span></td>
-        <td>Hosin Textile Co.,Ltd.</td>
-      </tr>
-      <tr>
-        <td><span>CEO</span></td>
-        <td>Lee-Suk-Ki</td>
-      </tr>
-      <tr>
-        <td><span>BUSINESS</span></td>
-        <td>Textile fabric manufacturing production<br/>textile material development</td>
-      </tr>
-      <tr>
-        <td><span>PHONE</span></td>
-        <td><a href="tel:+82-53-853-7209">+82-53-853-7209</a></td>
-      </tr>
-      <tr>
-        <td><span>FAX</span></td>
-        <td>+82-53-853-7210</td>
-      </tr>
-      <tr>
-        <td><span>WEB</span></td>
-        <td><a href="http://www.hoshintex.com/">www.hoshintex.com</a></td>
-      </tr>
-      <tr>
-        <td><span>E-MAIL</span></td>
-        <td><a href="mailto:hoshin@hoshintex.com">hoshin@hoshintex.com</a></td>
-      </tr>
-      <tr>
-        <td><span>ADDRESS</span></td>
-        <td>GYEONGSAN (Headquarters and 1st factory)</td>
-      </tr>
-      <tr>
-        <td><span>NAME</span></td>
-        <td><span>GYEONGSAN (Headquarters and 1st factory)</span>
-          <br/>139-20, Muncheon-gil, Jillyang-eup, Gyeongsan-si, Gyeongsangbuk-do, Republick of Korea
-          <br/><br/><span>2nd factory</span>
-          <br/>15 Daedonggongdan-gil, Wachon-eup, Gyeongsan-si, Gyeongsangbuk-do
-          <br/><br/><span>Daegu Office</span>
-          <br/>Room B-205, Dytech Research Institute, 92 Dalseocheon-ro, Seo-gu, Daegu</td>
-      </tr>
-    </table>
+    <p class="line">
+      Hoshin Textile Co., Ltd. supplies excellent quality materials to various customers around the world.
+      <br/>Our major buyers include global SPA brands such as ZARA and MANGO, as well as famous overseas brands such as PROMOD and Kate Spade, and we are supplying materials to many other converters and clothing manufacturers.
+    </p>
+    <img src="img/Performance_1_1.png"/>
+    <ul class="pagination">
+      <li class="active"><a>1</a></li>
+      <li><a href="Performance_2.html">2</a></li>
+    </ul>
   </div>
   <footer>
     <p>© 2024 HOSHIN Textile CO.,Ltd. All rights reserved.</p>

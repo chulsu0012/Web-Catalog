@@ -8,20 +8,21 @@
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/font.css">
   <style>
-    .sample {
+    .customer {
+      width: 100%;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
     }
-    .img {
-      width: 180px;
-      margin: 0 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+    .customer img {
+      width: 150px;
+      box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+      transition: ease 0.3s;
     }
-    .img img {
-      width: 100%;
+    .customer img:hover {
+      transform: scale(1.1);
+      z-index: 10;
     }
     .pagination {
       display: flex;
@@ -49,6 +50,29 @@
     .pagination .active a {
       background-color: #97282B;
       color: white;
+    }
+    .table {
+      padding: 30px 10px 20px;
+    }
+    .row{
+      width: 100%;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+    }
+    .content {
+      width: 400px;
+      border-left: 5px solid #97282B;
+    }
+    .subject {
+      font-size: 16px;
+      font-weight: bold;
+      color: #97282B;
+      margin-left: 10px;
+    }
+    .content p:not(.subject) {
+      font-size: 14px;
+      margin-left: 10px;
     }
   </style>
 </head>
@@ -96,32 +120,58 @@
   </header>
   <div class="wrap">
     <div class="twrap">
-      <p class="title">RESEARCH</p>
-      <p class="subtitle">Product</p>
+      <p class="title">MAJOR CUSTOMER</p>
+      <p class="subtitle">Performance</p>
     </div>
-    <div class="sample">
-      <div class="img">
-        <img src="img/Product_3_1.svg"/>
+    <div class="table">
+      <div class="row">
+        <div class="content">
+          <p class="subject">CATEGORIES</p>
+          <p>Women’s-wear</p>
+        </div>
+        <div class="content">
+          <p class="subject">EXPORTING COUNTRY</p>
+          <p>Middle East, Turkey, Europe, Hong Kong, etc.</p>
+        </div>
       </div>
-      <div class="img">
-        <img src="img/Product_3_2.svg"/>
+      <div class="row">
+        <div class="content">
+          <p class="subject">PRODUCTION ITEM</p>
+          <p>100% Polyester woven fabric</p>
+        </div>
+        <div class="content">
+          <p class="subject">CERTIFCATION</p>
+          <p>GRS, Higg index self-Assessment, ISO Main Biz, Innobis, Venture Companies</p>
+        </div>
       </div>
-      <div class="img">
-        <img src="img/Product_3_3.svg"/>
+      <div class="row">
+        <div class="content">
+          <p class="subject">BUYERS</p>
+          <p>H&M, MANGO</p>
+        </div>
+        <div class="content">
+          <p class="subject">MINMUM ORDER</p>
+          <p>MOQ 3,000yd｜MOC 1,000yd</p>
+        </div>
       </div>
-      <div class="img">
-        <img src="img/Product_3_4.svg"/>
-      </div>
-      <div class="img">
-        <img src="img/Product_3_5.svg"/>
-      </div>
-      <div class="img">
-        <img src="img/Product_3_6.svg"/>
-      </div>
+    </div>
+    <div class="customer">
+      <img src="img/Performance_2_1.svg"/>
+      <img src="img/Performance_2_2.svg"/>
+      <img src="img/Performance_2_3.svg"/>
+      <img src="img/Performance_2_4.svg"/>
+      <img src="img/Performance_2_5.svg"/>
+    </div>
+    <div class="customer">
+      <img src="img/Performance_2_6.svg"/>
+      <img src="img/Performance_2_7.svg"/>
+      <img src="img/Performance_2_8.svg"/>
+      <img src="img/Performance_2_9.svg"/>
+      <img src="img/Performance_2_10.svg"/>
     </div>
     <ul class="pagination">
-      <li class="active"><a>1</a></li>
-      <li><a href="Product_4.html">2</a></li>
+      <li><a href="Performance_1.html">1</a></li>
+      <li class="active"><a>2</a></li>
     </ul>
   </div>
   <footer>
