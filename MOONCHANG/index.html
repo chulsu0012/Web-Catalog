@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonchang</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/font.css">
+  <style>
+    .logo {
+      position: fixed;
+      top: 30px;
+      left: 50px;
+    }
+    .twrap {
+      position: fixed;
+      left: 100px;
+      top: 250px;
+      border: none;
+    }
+    .twrap .title {
+      font-size: 100px;
+      font-weight: 800;
+    }
+    .twrap > div {
+      padding-left: 10px;
+    }
+    .twrap .subtitle {
+      color: #fff;
+      padding-left: 10px;
+      border-left: 5px solid #0C4DA2;
+    }
+    .select {
+      position: fixed;
+      bottom: 250px;
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+    .row > a{
+      width: 170px;
+      height: 40px;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 2px solid #fff;
+      margin: 10px 15px;
+      transition: ease 0.3s;
+    }
+    .row > a:hover {
+      transform: scale(1.1);
+    }
+    body {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('img/index_1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-image 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-header">
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </a>
+  </div>
+  <div class="twrap">
+    <p class="title">MOONCHANG</p>
+    <div>
+      <p class="subtitle">
+        Thinking About the Future and The Environment
+        <br/>We will Do Our Best to become a Technology-accumulating and Environment-friendly Company.
+      </p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="select">
+      <div class="row">
+        <a href="About_1.html">ABOUT US</a>
+        <a href="Product_1.html">PRODUCT</a>
+        <a href="PR_1.html">PR CENTER</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 Moonchang CO.,Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>

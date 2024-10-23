@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonchang</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/font.css">
+  <style>
+    .wrap {
+      width: 1100px;
+    }
+    .hwrap {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      /* gap: 30px; */
+    }
+    .timeline {
+      width: 100%;
+      border-left: 2px dotted #dfdfdf;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    #left {
+      border-bottom: 2px dotted #dfdfdf;
+    }
+    #right {
+      border-top: 2px dotted #dfdfdf;
+      border-right: 2px dotted #dfdfdf;
+    }
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+    }
+    #left > .timeline-item {
+      margin-bottom: 18px;
+    }
+    #right > .timeline-item {
+      margin-top: 18px;
+    }
+    .circle {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border: 1.5px solid #0C4DA2;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -10px;
+      top: 0;
+    }
+    .circle::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #0C4DA2;
+      border-radius: 50%;
+    }
+    .content {
+      width: 400px;
+      margin-left: 40px;
+    }
+    .date {
+      font-size: 14px;
+      font-weight: bold;
+      color: #0C4DA2;
+    }
+    .content p:not(.date) {
+      font-size: 12px;
+    }
+    .timeline-row {
+      width: 100%;
+    }
+    .line {
+      width: 51.55%;
+      height: 2px;
+      background-color: #0C4DA2;
+    }
+    #right {
+      float: right;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- 로고 영역 -->
+    <div>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </a>
+    </div>
+
+    <!-- 상단 메뉴 영역 -->
+    <div class="menu">
+      <ul>
+        <li><a href="About_1.html">ABOUT US</a>
+          <ul>
+            <li><a href="About_1.html">CEO Message</a></li>
+            <li><a href="About_2.html">Awards</a></li>
+            <li><a href="About_5.html">Management Philosophy</a></li>
+            <li><a href="About_6.html">Company History</a></li>
+            <li><a href="About_9.html">Organization</a></li>
+            <li><a href="About_10.html">Certification</a></li>
+            <li><a href="About_12.html">Production Facility Status</a></li>
+          </ul>
+        </li>
+        <li><a href="Product_1.html">PRODUCT</a>
+          <ul>
+            <li><a href="Product_1.html">STS Seismic Isolation Water Tank</a></li>
+            <li><a href="Product_2.html">STS Lining</a></li>
+            <li><a href="Product_3.html">PE&SPE Lining</a></li>
+            <li><a href="Product_4.html">STS Cylindrical Water Tank</a></li>
+            <li><a href="Product_5.html">Water Purification Equipment</a></li>
+          </ul>
+        </li>
+        <li><a href="PR_1.html">PR CENTER</a>
+          <ul>
+            <li><a href="Performance_1.html">Installation</a></li>
+            <li><a href="Performance_3.html">Video</a></li>
+            <li><a href="Performance_4.html">Press Release</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="twrap">
+      <p class="title">COMPANY HISTORY</p>
+      <p class="subtitle">About us</p>
+    </div>
+    <div class="hwrap">
+      <div class="timeline" id="left">
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2017.06</p>
+            <p>Received the Korea Product Innovation Award for “Water Tank Using PE Antibacterial Sheet”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2017.09</p>
+            <p>Designated by the Minister of Public Administration and Security as “NET New Technology”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2018.06</p>
+            <p>Received the Korea Product Innovation Award for “External Reinforcement Water Tank Using Reinforcement Wire”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2018.10</p>
+            <p>Designated as an Excellent Product by the Public Procurement Service for “Stainless Steel Seismic Isolation Water Tank”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2019.04</p>
+            <p>Designated as a Star Company in Daegu</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2019.06</p>
+            <p>Received the Korea Innovation Grand Prize “Earthquake Safe Stainless Steel Water Tank”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2020.06</p>
+            <p>Received the Korea Innovation Award for 10 Consecutive Years</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2020.12</p>
+            <p>Designated as a Water Star Company by the Korea Environment Corporation</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2021.06</p>
+            <p>Received a Commendation as a Proud Small and Medium-sized Business</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline" id="right">
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2022.12</p>
+            <p>Awarded a Letter of Appreciation from the Head of the Daegu Regional Tax Service</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2022.11</p>
+            <p>Awarded a Letter of Appreciation from Daegu Regional Public Procurement Service</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2022.10</p>
+            <p>Designation of Quality Assurance Procurement Goods</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2022.03</p>
+            <p>Designation of Green Technology Certification</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2022.02</p>
+            <p>Head Office Expansion and Relocation</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2022.01</p>
+            <p>Excellent Procurement Product “STS Condensation Water Discharge Structure Type Water Tank”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2021.12</p>
+            <p>Selected as a Local Star Company by the Small and Medium Venture Business Department</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2021.11</p>
+            <p>Awarded the Daegu Metropolitan City Small and Medium Business Grand Prize (Mayor of Daegu Metropolitan City)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2021.11</p>
+            <p>Awarded the Daegu Metropolitan City Excellence and Star Company Award (Mayor of Daegu Metropolitan City)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li><a href="About_6.html">1</a></li>
+      <li><a href="About_7.html">2</a></li>
+      <li class="active"><a>3</a></li>
+    </ul>
+  </div>
+  <footer>
+    <p>© 2024 MOONCHANG CO.,Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>

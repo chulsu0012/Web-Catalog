@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonchang</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/font.css">
+  <style>
+    .wrap {
+      width: 1100px;
+    }
+    .hwrap {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      /* gap: 30px; */
+    }
+    .timeline {
+      width: 100%;
+      border-left: 2px dotted #dfdfdf;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    #left {
+      border-bottom: 2px dotted #dfdfdf;
+    }
+    #right {
+      border-top: 2px dotted #dfdfdf;
+      border-right: 2px dotted #dfdfdf;
+    }
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+    }
+    #left > .timeline-item {
+      margin-bottom: 18px;
+    }
+    #right > .timeline-item {
+      margin-top: 18px;
+    }
+    .circle {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border: 1.5px solid #0C4DA2;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -10px;
+      top: 0;
+    }
+    .circle::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #0C4DA2;
+      border-radius: 50%;
+    }
+    .content {
+      width: 400px;
+      margin-left: 40px;
+    }
+    .date {
+      font-size: 14px;
+      font-weight: bold;
+      color: #0C4DA2;
+    }
+    .content p:not(.date) {
+      font-size: 12px;
+    }
+    .timeline-row {
+      width: 100%;
+    }
+    .line {
+      width: 51.55%;
+      height: 2px;
+      background-color: #0C4DA2;
+    }
+    #right {
+      float: right;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- 로고 영역 -->
+    <div>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </a>
+    </div>
+
+    <!-- 상단 메뉴 영역 -->
+    <div class="menu">
+      <ul>
+        <li><a href="About_1.html">ABOUT US</a>
+          <ul>
+            <li><a href="About_1.html">CEO Message</a></li>
+            <li><a href="About_2.html">Awards</a></li>
+            <li><a href="About_5.html">Management Philosophy</a></li>
+            <li><a href="About_6.html">Company History</a></li>
+            <li><a href="About_9.html">Organization</a></li>
+            <li><a href="About_10.html">Certification</a></li>
+            <li><a href="About_12.html">Production Facility Status</a></li>
+          </ul>
+        </li>
+        <li><a href="Product_1.html">PRODUCT</a>
+          <ul>
+            <li><a href="Product_1.html">STS Seismic Isolation Water Tank</a></li>
+            <li><a href="Product_2.html">STS Lining</a></li>
+            <li><a href="Product_3.html">PE&SPE Lining</a></li>
+            <li><a href="Product_4.html">STS Cylindrical Water Tank</a></li>
+            <li><a href="Product_5.html">Water Purification Equipment</a></li>
+          </ul>
+        </li>
+        <li><a href="PR_1.html">PR CENTER</a>
+          <ul>
+            <li><a href="Performance_1.html">Installation</a></li>
+            <li><a href="Performance_3.html">Video</a></li>
+            <li><a href="Performance_4.html">Press Release</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="twrap">
+      <p class="title">COMPANY HISTORY</p>
+      <p class="subtitle">About us</p>
+    </div>
+    <div class="hwrap">
+      <div class="timeline" id="left">
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2012.06</p>
+            <p>Received the Korea New Technology Excellence Award for “STS Water Tank”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2012.08</p>
+            <p>Designated as an excellent product by the Public Procurement Service for “Water Tank with Built-in Water Flow Guide Plate”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2012.11</p>
+            <p>Received the Presidential Award (Gold Prize) at the National Quality Circle Contest</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2012.11</p>
+            <p>Awarded the Silver Tower Order of Industrial Service Merit for “Quality Contribution Sector”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2012.12</p>
+            <p>Won the Korea Audit Association Stainless Steel Club Excellent Product Contest (Excellence Award) for “STS Wall Panel”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2013.04</p>
+            <p>Designated as an Excellent Product by the Public Procurement Service for “SPE Complex Water Tank”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2013.06</p>
+            <p>Received the Korea New Technology Innovation Award for “Water Tank with Built-in STS Water Flow Guide Plate”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2013.11</p>
+            <p>Won the Korea Auditory Association Stainless Steel Club Excellent Product Contest (Silver Award) for “STS Water Tank”</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline" id="right">
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2017.05</p>
+            <p>Designated as “Star Company 100” by Daegu Metropolitan City</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2017.03</p>
+            <p>Recognized as an Affiliated Research Institute of Moonchang Co., Ltd.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2016.07</p>
+            <p>Designated as “Star Company 100” by Daegu Metropolitan City</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2016.06</p>
+            <p>Received the Korea New Technology Innovation Award for “Seismic Isolation Technology for Stainless Steel Water Tanks”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2015.06</p>
+            <p>Received the Korea New Technology Innovation Award for “STS thermal insulation integrated water tank”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2014.11</p>
+            <p>Received the Korea Gas Corporation Commendation Award</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2014.10</p>
+            <p>Designated as an Excellent Product by the Public Procurement Service for “Stainless Steel Thermal Insulation Integrated Water Tank”</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2014.10</p>
+            <p>Received a Certificate of Appreciation from the National Police Agency</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <p class="date">2014.06</p>
+            <p>Received the Korea New Technology Innovation Award for “SPE Complex Reservoir”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li><a href="About_6.html">1</a></li>
+      <li class="active"><a>2</a></li>
+      <li><a href="About_8.html">3</a></li>
+    </ul>
+  </div>
+  <footer>
+    <p>© 2024 MOONCHANG CO.,Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>
