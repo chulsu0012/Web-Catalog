@@ -8,21 +8,52 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/font.css">
   <style>
-    .row {
+    .text {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+    .text span {
+      color: #0C4DA2;
+    }
+    .content {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      margin-top: 30px;
+    }
+    .content img {
+      width: 50%;
+    }
+    .content-text {
+      display: flex;
+      flex-direction: column;
+      border: 10px solid #efefef;
+      padding: 20px;
+    }
+    .content-text > p {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: left;
+    }
+    .content-text > ul > li {
+      font-size: 12px;
+      list-style: circle;
+      list-style-position: inside;
+      text-align: justify;
+      text-indent: -20px;
+      padding: 10px 0 0 20px;
+    }
+    .icon {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: left;
       margin-top: 20px;
+      padding-left: 10px;
+      gap: 5px;
     }
-    .row img {
-      width: 180px;
-      margin-right: 10px;
-      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-      transition: ease 0.3s;
-    }
-    .row img:hover {
-      transform: scale(1.1);
-      z-index: 10;
+    .icon img {
+      width: 40px;
     }
   </style>
 </head>
@@ -69,25 +100,27 @@
   </header>
   <div class="wrap">
     <div class="twrap">
-      <p class="title">CERTIFICATION</p>
-      <p class="subtitle">About us</p>
+      <p class="title">STS CYLINDRICAL WATER TANK</p>
+      <p class="subtitle">Product</p>
     </div>
-    <div class="row">
-      <img src="img/About_10_1.jpg"/>
-      <img src="img/About_10_2.jpg"/>
-      <img src="img/About_10_3.jpg"/>
-      <img src="img/About_10_4.jpg"/>
+    <div class="text">
+      <p>The Stainless Steel Cylindrical Water Tank Uses <span>STS304(General Type)</span> and <span>STS329LS(High Corrosion Resistance Type)</span> Materials to secure Hygiene and is a Highly <span>Corrosion-resistant and Highly Durable Water Tank</span> that Naturally Harmonizes with the surrounding Environment by Applying Elegant Finishing Materials.</p>
     </div>
-    <div class="row">
-      <img src="img/About_10_5.jpg"/>
-      <img src="img/About_10_6.jpg"/>
-      <img src="img/About_10_7.jpg"/>
-      <img src="img/About_10_8.jpg"/>
+    <div class="content">
+      <img src="img/Product_4_1.jpg"/>
+      <div class="content-text">
+        <p class="subject">Stainless Steel Cylindrical Water Tank</p>
+        <ul>
+          <li>Secured Hygiene by Applying STS304 (General Type) and STS329LD (High Corrosion Resistance Type) Materials</li>
+          <li>Natural Harmony with the Surrounding Environment by Applying Aluminum and Film-pressed Color Iron Finishing Materials</li>
+          <li>Prevents Freezing and Bursting in Winter with a Built-in Pipe Structure</li>
+        </ul>
+        <div class="icon">
+          <img src="img/Product_icon_4.gif"/>
+          <img src="img/Product_icon_5.gif"/>
+        </div>
+      </div>
     </div>
-    <ul class="pagination">
-      <li class="active"><a>1</a></li>
-      <li><a href="About_11.html">2</a></li>
-    </ul>
   </div>
   <footer>
     <p>© 2024 MOONCHANG CO.,Ltd. All rights reserved.</p>

@@ -8,21 +8,51 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/font.css">
   <style>
-    .row {
+    .text {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+    .text span {
+      color: #0C4DA2;
+    }
+    .content {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      margin-top: 30px;
+    }
+    .content img {
+      width: 50%;
+    }
+    .content-text {
+      display: flex;
+      flex-direction: column;
+      border: 10px solid #efefef;
+      padding: 20px;
+    }
+    .content-text > p {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .content-text > ul > li {
+      font-size: 12px;
+      list-style: circle;
+      list-style-position: inside;
+      text-align: justify;
+      text-indent: -20px;
+      padding: 10px 0 0 20px;
+    }
+    .icon {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: left;
       margin-top: 20px;
+      padding-left: 10px;
+      gap: 5px;
     }
-    .row img {
-      width: 180px;
-      margin-right: 10px;
-      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-      transition: ease 0.3s;
-    }
-    .row img:hover {
-      transform: scale(1.1);
-      z-index: 10;
+    .icon img {
+      width: 40px;
     }
   </style>
 </head>
@@ -69,25 +99,24 @@
   </header>
   <div class="wrap">
     <div class="twrap">
-      <p class="title">CERTIFICATION</p>
-      <p class="subtitle">About us</p>
+      <p class="title">PE&SPE LINING</p>
+      <p class="subtitle">Product</p>
     </div>
-    <div class="row">
-      <img src="img/About_10_1.jpg"/>
-      <img src="img/About_10_2.jpg"/>
-      <img src="img/About_10_3.jpg"/>
-      <img src="img/About_10_4.jpg"/>
+    <div class="text">
+      <p>It is a Product that Satisfies bothSanitationand Economic Feasibility by using <span>PE + Non-woven Fabric and PE + STS Panel.</span>
+        <br/>It is <span>Permanently bonded to the Concrete</span>wall to prevent Leaks and Contamination, Allowing Stable Management of Stored Water.</p>
     </div>
-    <div class="row">
-      <img src="img/About_10_5.jpg"/>
-      <img src="img/About_10_6.jpg"/>
-      <img src="img/About_10_7.jpg"/>
-      <img src="img/About_10_8.jpg"/>
+    <div class="content">
+      <img src="img/Product_3_1.jpg"/>
+      <div class="content-text">
+        <p class="subject">PE · SPE Lining</p>
+        <ul>
+          <li>Received the 2017 Korea Product Innovation Award (Reservoir using PE Antibacterial Sheet)</li>
+          <li>Awarded the 2014 Korea New Technology Innovation Award (SPE Complex Water Tank)</li>
+          <li>Designated as an Excellent Product by the Public Procurement Service in 2013</li>
+        </ul>
+      </div>
     </div>
-    <ul class="pagination">
-      <li class="active"><a>1</a></li>
-      <li><a href="About_11.html">2</a></li>
-    </ul>
   </div>
   <footer>
     <p>© 2024 MOONCHANG CO.,Ltd. All rights reserved.</p>
